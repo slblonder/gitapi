@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git Search</title>
+            <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+  </head>
+
+   <body>
+
+      <section class="container">
+        <h1>Github Search Users</h1>
+
+        <form id="jsform" class="search-form css-search">
+            <label id="search-label" for="username">Enter a GitHub user handle:</label>
+            <input type="text" name="username" id="js-username username" class="js-username css-search" required>
+            <button type="submit" id="searchbutton" class="css-search">Search</button>
+
+        </form>
+        <main>
+            <div class="flex-container">
+                <section class="js-results results hidden"></section>
+            </div>
+
+        </form>
+        <main>
+            <div class="flex-container">
+                <section class="js-results results hidden" id="hidden">
+
+                </section>
+            </div>
+
+        </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
